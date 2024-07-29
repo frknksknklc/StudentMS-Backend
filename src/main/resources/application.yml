@@ -1,0 +1,19 @@
+server:
+  port: 9192
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sbr_db
+    username: root
+    password: purkinje71
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update # create, create-drop, validate, update
+      show-sql: true # SQL sorgularını konsola yazdır
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    properties:
+      hibernate.format_sql: true
+
+
+      
